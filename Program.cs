@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections.Specialized;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    class Program
     
     {
     static void zadanie1()
         {
+
             Console.WriteLine("Введите длину ребра куба a: ");
             string tmp = Console.ReadLine();
             int a = Int32.Parse(tmp);
@@ -74,7 +76,64 @@ namespace ConsoleApp1
             }
         }
         
+        static void Zadanie6()
+        {
+            Console.WriteLine("Введите 3 числа"); 
+           
+            string tmp = Console.ReadLine();
+            string tmi = Console.ReadLine();
+            string tmk = Console.ReadLine();
+            int a = Int32.Parse(tmp);
+            int b = Int32.Parse(tmi);
+            int c = Int32.Parse(tmk);
+            int n = 0;
+            if(a > 0) ++n;
+            if(b > 0) ++n;
+            if(c > 0) ++n;
+            Console.WriteLine("Положительные числа"+n);
 
+        }
+
+        static void Zadanie7()
+        {
+            Console.WriteLine("Введите 2 числа");
+            string tmp = Console.ReadLine();
+            string tmi = Console.ReadLine();
+            int a=Int32.Parse(tmp);
+            int b = Int32.Parse(tmi);
+            if (a > b) ;
+            Console.WriteLine("Меньший " + Math.Min(a, b));
+            
+            
+            
+        }
+
+        static void Zadanie8()
+        {
+            Console.WriteLine("Введите 2 числа");
+            string tmp = Console.ReadLine();
+            string tmi = Console.ReadLine();
+            double a = Double.Parse(tmp);
+            double b = Double.Parse(tmi);
+            if (a >b) 
+            {
+                double temp = a;
+                a=b;
+                b= temp;
+            }
+            Console.WriteLine("Новое значение A" + a);
+            Console.WriteLine("Новое значение B" + b);
+           
+         
+
+        }
+       
+
+
+        static void Main(string[] args)
+        {
+            Zadanie8();
+        }
 
 
 
